@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+    --primary-color: #34495E;
+    --second-color: #2471A3;
+    --third-color: #AEB6BF;
+    --light-color: white;
+    --dark-color: black;
+    --grey-color: grey;
+    --font-size-1: 52px;
+    --font-size-2: 42px;
+    --font-size-3: 22px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.img{
+    max-width: 100%;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-light .btn-secondary{
+    background-color: var(--third-color);
+    border-color: var(--third-color);
+}
+
+.text-primary{
+    color: var(--primary-color) !important;
+}
+
+.text-secondary{
+    color: var(--second-color) !important;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.navbar .navbar-brand{
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: var(--second-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.header .auth{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .detail{
+    width: 75% !important;
+}
+
+@media screen and (max-width:768px){
+    header, header.detail{
+        width: 100%;
+    }
+}
+
+.header .header-title{
+    font-size: var(--font-size-1);
+    font-weight: 900;
+}
+
+.hero-post .hero-post-img{
+    height: 420px;
+    object-fit: cover;
+}
+
+.hero-post .hero-post-title{
+    font-size: var(--font-size-2);
+    font-weight:900;
+}
+
+.hero-post .avatar,
+.card-post .avatar{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.card-post{
+    transition: .3s;
+}
+
+.card-post{
+    transform: translate(-10px);
+}
+
+.card-post .card-img-top{
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-post .card-post-litle{
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+
+.section .section-title{
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
